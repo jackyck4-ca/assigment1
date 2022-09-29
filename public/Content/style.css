@@ -1,0 +1,19 @@
+html {font-size:10px;}
+
+body {
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+.bg-green {background:#17c7b9;}
+nav .navbar-brand img {max-width:75px}
+
+a {
+  color: #00B7FF;
+}
+a.nav-link {font-size:1.6rem;margin:0 2rem;}
+a.nav-link i {margin-right:5px}
+
+footer nav h6 {padding:1rem 0;margin:0 auto;}
+.footer-text {font-size:1.2rem;}
