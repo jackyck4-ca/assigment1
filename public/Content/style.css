@@ -1,3 +1,10 @@
+/*
+File name : style.css
+Name : Che Kei, Cheung
+Student ID : 301252985
+Date : 2022-09-29
+*/
+
 html {font-size:10px;}
 
 body {
@@ -18,8 +25,17 @@ a.nav-link i {margin-right:5px}
 footer nav h6 {padding:1rem 0;margin:0 auto;}
 .footer-text {font-size:1.2rem;}
 
-.homepage {padding:20vh 0;text-align:center}
-.homepage .h1 {font-size:3.6rem}
+.container {padding:5rem 0;max-width:1100px;}
+h1.pagetitle {font-size:4rem;margin:0 1rem;padding:0 0 2rem;font-weight:500;text-decoration: underline;}
+.quota {font-size:1.2rem}
+.roundimg img {border-radius:30px;}
+.description {font-size:1.6rem}
+.btn {font-size:1.4rem}
+h6 {font-size:1.6rem}
+
+.services .listing .row {padding:2rem 0rem}
+
+.homepage {text-align:center}
 .homepage .content > div {margin:0 auto;}
 .homepage p {font-size:2rem;}
 .homepage .links {padding:2rem 0;}
@@ -27,3 +43,17 @@ footer nav h6 {padding:1rem 0;margin:0 auto;}
 .homepage .links .row > div {padding-top:1rem;padding-bottom:1rem}
 .homepage .links .row .col-sm-6 {margin:0 5%;width:40%;}
 .homepage .links a {font-size:1.8rem}
+
+.contacts form {font-size:1.4rem}
+.contacts form .row {padding:0 0 1rem;}
+.contacts form textarea {height:10rem}
+
+.projects .row {padding:0 0 1rem}
+.projects .project .name {font-weight:bold;padding:1rem 0 0}
+
+.about {text-align:center}
+.about .pics {width:20%;margin:0  auto;}
+.about .pics img {width:100%}
+.about .name {padding:1rem 0;font-size:2rem;}
+.about .description {}
+

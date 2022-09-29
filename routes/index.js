@@ -23,11 +23,24 @@ router.get('/services', function(req, res, next) {
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact - Che Kei Cheung' });
+  res.render('contactus', { title: 'Contact - Che Kei Cheung' });
 });
 
 router.post('/contact', function(req, res, next) {
-  
+  let name = req.body.name;
+  let email = req.body.email;
+  let mobile = req.body.mobile;
+  let message = req.body.message;
+
+  //check to avoid empty entry
+  if (name != "" && email != "" && mobile != "" && message != "" )
+  {
+    console.log(name+" "+email+" "+mobile+" "+message);
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ status : 1 }));
+  }
+  else
+    res.end(JSON.stringify({ status : 0 }));
 });
 
 module.exports = router;

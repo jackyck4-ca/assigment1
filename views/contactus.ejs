@@ -1,58 +1,61 @@
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container contacts">
+
+  <!-- Section title-->
+  <h1 class="pagetitle">Contact</h1>
   
-
-  <!-- Main Content -->
-  <main class="container services">
-    
-      <h1 class="display-4">Contact us</h1>
-
-      <div class="content">
-       
-        <div class="row">
-          <div class="col-4">
-              <img src="" />
-          </div>
-
-          <div class="col-8">
-            <p>Please feel free to contact me by fill the form:</p>
-            <form>
-              <div>
-                <div>Name</div>
-                <div><input type="text" /></div>
-              </div>
-
-              <div>
-                <div>Email</div>
-                <div><input type="text" /></div>
-              </div>
-
-              <div>
-                <div>Mobile</div>
-                <div><input type="text" /></div>
-              </div>
-
-              <div>
-                <div>Message</div>
-                <div><textarea ></textarea></div>
-              </div>
-
-              <div>
-                <div><input type="button" class="btn" value="Submit" onclick="submitform()" /></div>
-              </div>
-            </form>
-          </div>
+  
+  <div class="content">
+    <div class="row">
+      <!-- Left side image-->
+      <div class="col-4">
+        <div class="roundimg">
+          <img src="/Assets/contact/miles-burke-idhx-MOCDSk-unsplash.jpg" class="img-fluid" />
         </div>
-
-
-        
-        
+        <!-- Free image feom unsplash.com  -->
       </div>
 
-      
-   
-  </main>
+      <!-- Form and content text-->
+      <div class="col-8">
+        <div class="description">
+          <p>Please feel free to contact me by email<br />
+            <a href="mailto:ccheun97@my.centennialcollege.ca">ccheun97@my.centennialcollege.ca</a><br />
+          </p>
+          <p>You can also drop your message in the below form, I will reply you shortly:</p>
+        </div>
+        <form>
+          <div class="row">
+            <div class=""><label>Name</label></div>
+            <div class=""><input type="text" id="name" class="field form-control" /></div>
+          </div>
+
+          <div class="row">
+            <div><label>Email</label></div>
+            <div><input type="text" id="email" class="field form-control" /></div>
+          </div>
+
+          <div class="row">
+            <div><label>Mobile</label></div>
+            <div><input type="text" id="mobile" class="field form-control" /></div>
+          </div>
+
+          <div class="row">
+            <div><label>Message</label></div>
+            <div><textarea id="message" class="field form-control" ></textarea></div>
+          </div>
+
+          <div class="row">
+            <div><input type="button" class="btn btn-primary" value="Submit" id="submitform" /></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
   
 <%- include partials/bottom_nav.ejs %>  
 
