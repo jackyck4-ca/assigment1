@@ -17,3 +17,13 @@ a.nav-link i {margin-right:5px}
 
 footer nav h6 {padding:1rem 0;margin:0 auto;}
 .footer-text {font-size:1.2rem;}
+
+.homepage {padding:20vh 0;text-align:center}
+.homepage .h1 {font-size:3.6rem}
+.homepage .content > div {margin:0 auto;}
+.homepage p {font-size:2rem;}
+.homepage .links {padding:2rem 0;}
+.homepage .links .row {padding:2rem 0;}
+.homepage .links .row > div {padding-top:1rem;padding-bottom:1rem}
+.homepage .links .row .col-sm-6 {margin:0 5%;width:40%;}
+.homepage .links a {font-size:1.8rem}

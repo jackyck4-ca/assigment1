@@ -11,19 +11,23 @@ router.get('/home', function(req, res, next) {
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About - Che Kei Cheung' });
+  res.render('about', { title: 'About - Che Kei Cheung' });
 });
 
-router.get('/products', function(req, res, next) {
-  res.render('index', { title: 'Products - Che Kei Cheung' });
+router.get('/projects', function(req, res, next) {
+  res.render('projects', { title: 'Projects - Che Kei Cheung' });
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services - Che Kei Cheung' });
+  res.render('services', { title: 'Services - Che Kei Cheung' });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact - Che Kei Cheung' });
+  res.render('contact', { title: 'Contact - Che Kei Cheung' });
+});
+
+router.post('/contact', function(req, res, next) {
+  
 });
 
 module.exports = router;

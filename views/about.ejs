@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    
-    <link href="/javascripts/css/bootstrap.min.css" rel="stylesheet"> 
-    <script src="/javascripts/js/bootstrap.min.js"></script>  
+<%- include partials/header.ejs %>
 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<%- include partials/main_nav.ejs %>
+  
 
+  <!-- Main Content -->
+  <main class="container about">
     
-  </body>
-</html>
+      <h1 class="display-4">About</h1>
+
+      <div class="content">
+        <div class="pics"><img src="/Assets/DSC_0024a.jpg" /></div>
+        <div class="name">Che Kei, Cheung</div>
+        <div class="description"><p>I am working for program developement for years. Projects using php, c# and java.</p></div>
+
+        <a href="/pdf/resume.pdf">Download my resume</a>
+      </div>
+
+      
+   
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

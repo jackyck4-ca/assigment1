@@ -1,11 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container about">
+    
+      <h1 class="display-4">Projects</h1>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-4 project">
+            <div class="pics"><img src="/Assets/" /></div>
+            <div class="name">7 - 11 Donation website</div>
+            <div class="description"><p>It is campaign website show user donation status. Project using wordpress as content manegement system.</p></div>
+          </div>
+
+          <div class="col-4 project">
+            <div class="pics"><img src="/Assets/" /></div>
+            <div class="name">Jewellery enquiry cart</div>
+            <div class="description"><p>System design and implement by using larvel.</p></div>
+          </div>
+
+          <div class="col-4 project">
+            <div class="pics"><img src="/Assets/" /></div>
+            <div class="name">Runner in the city</div>
+            <div class="description"><p>Mobile application development by using react native. Backend api development by using Laveral.</p></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 project">
+            <div class="pics"><img src="/Assets/" /></div>
+            <div class="name">Art gallery system</div>
+            <div class="description"><p>System impletmentation by using liferay.</p></div>
+          </div>
+
+          <div class="col-4 project">
+            <div class="pics"><img src="/Assets/" /></div>
+            <div class="name">Aedas cooprate website</div>
+            <div class="description"><p>System implementation by using durpal.</p></div>
+          </div>
+
+          
+        </div>
+        
+      </div>
+
+      
+   
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+

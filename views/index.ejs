@@ -4,11 +4,29 @@
   
 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+  <main class="container homepage">
+    
+      <h1 class="display-4">Hello !!</h1>
+
+      <div class="content row">
+        <div class="col-8 sm-2 col-md-offset-2">
+          <p>My name is Che Kei, Cheung welcome to access this website. You can know more about me by following section:</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="row row-cols-2">
+          <div class="col-sm-6 border bg-light "><a href="/about"><span>About</span></a></div>
+          <div class="col-sm-6 border bg-light "><a href="/projects"><span>Projects</span></a></div>
+        </div>
+
+        <div class="row row-cols-2">
+          <div class="col-sm-6 border bg-light "><a href="/services"><span>Services</span></a></div>
+          <div class="col-sm-6 border bg-light "><a href="/contact"><span>Contact</span></a></div>
+        </div>
+      </div>
       
-    </div>
+   
   </main>
   
 <%- include partials/bottom_nav.ejs %>  

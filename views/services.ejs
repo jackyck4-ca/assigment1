@@ -1,11 +1,78 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container services">
+    
+      <h1 class="display-4">Projects</h1>
+
+      <div class="content">
+        <div class="row">
+          <p>Service I offer:</p>
+        </div>
+        <div class="row">
+          <div class="col-6">
+              <h6>Web development</h6>
+              <ul>
+                <li>Classic php developement</li>
+                <li>Wordpress setup install and modeule customization</li>
+                <li>Durpal setup install and modeule customization</li>
+                <li>Larvel</li>
+                <li>Front end developement by using react, vue</li>
+                <li>Jquery and classic javascript front end development</li>
+                <li>C#, asp.net</li>
+                <li>JSP</li>
+                <li>Next.js</li>
+              </ul>
+          </div>
+
+          <div class="col-6">
+            <h6>General development</h6>
+            <ul>
+              <li>Flash game</li>
+              <li>Desktop application</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+              <h6>Mobile development</h6>
+              <ul>
+                <li>Object C, swift</li>
+                <li>Android, Flutter</li>
+                <li>Cordova</li>
+                <li>React native</li>
+              </ul>
+          </div>
+
+          <div class="col-6">
+            <h6>Others</h6>
+            <ul>
+              <li>SEO implation</li>
+              <li>Linux server set up</li>
+              <li>AWS service setup </li>
+              <li>Networking</li>
+              <li>Project management</li>
+            </ul>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      
+   
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
+
+
+
+
