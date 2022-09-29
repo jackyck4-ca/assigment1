@@ -6,26 +6,32 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home - Che Kei Cheung' , sectionpicked : 'Home' });
 });
 
+/* GET home page. */
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home - Che Kei Cheung', sectionpicked : 'Home'  });
 });
 
+/* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About - Che Kei Cheung' , sectionpicked : 'About' });
 });
 
+/* GET projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects - Che Kei Cheung', sectionpicked : 'Projects'  });
 });
 
+/* GET services page. */
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services - Che Kei Cheung', sectionpicked : 'Services'  });
 });
 
+/* GET contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contactus', { title: 'Contact - Che Kei Cheung', sectionpicked : 'Contact'  });
 });
 
+/* Post contact form information */
 router.post('/contact', function(req, res, next) {
   let name = req.body.name;
   let email = req.body.email;
