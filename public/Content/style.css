@@ -32,6 +32,7 @@ h1.pagetitle {font-size:4rem;margin:0 1rem;padding:0 0 2rem;font-weight:500;text
 .description {font-size:1.6rem}
 .btn {font-size:1.4rem}
 h6 {font-size:1.6rem}
+.nav-item.active a {font-weight:bold}
 
 .services .listing .row {padding:2rem 0rem}
 

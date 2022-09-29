@@ -3,27 +3,27 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home - Che Kei Cheung' });
+  res.render('index', { title: 'Home - Che Kei Cheung' , sectionpicked : 'Home' });
 });
 
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home - Che Kei Cheung' });
+  res.render('index', { title: 'Home - Che Kei Cheung', sectionpicked : 'Home'  });
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About - Che Kei Cheung' });
+  res.render('about', { title: 'About - Che Kei Cheung' , sectionpicked : 'About' });
 });
 
 router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects - Che Kei Cheung' });
+  res.render('projects', { title: 'Projects - Che Kei Cheung', sectionpicked : 'Projects'  });
 });
 
 router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'Services - Che Kei Cheung' });
+  res.render('services', { title: 'Services - Che Kei Cheung', sectionpicked : 'Services'  });
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('contactus', { title: 'Contact - Che Kei Cheung' });
+  res.render('contactus', { title: 'Contact - Che Kei Cheung', sectionpicked : 'Contact'  });
 });
 
 router.post('/contact', function(req, res, next) {

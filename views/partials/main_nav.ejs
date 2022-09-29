@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
 
-        <% if (title == "Home"){ %>
+        <% if (sectionpicked == "Home"){ %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
@@ -16,7 +16,7 @@
           <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
         </li>
 
-        <% if (title == "About") { %>
+        <% if (sectionpicked == "About") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
@@ -24,7 +24,7 @@
           <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> About </a>
         </li>
 
-        <% if (title == "Products") { %>
+        <% if (sectionpicked == "Projects") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
@@ -32,7 +32,7 @@
           <a class="nav-link" href="/projects"><i class="fab fa-elementor"></i> Projects </a>
         </li>
 
-        <% if (title == "Services") { %>
+        <% if (sectionpicked == "Services") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
@@ -40,7 +40,7 @@
           <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
         </li>
 
-        <% if (title == "Contact") { %>
+        <% if (sectionpicked == "Contact") { %>
         <li class="nav-item active">
         <% } else  { %>
         <li class="nav-item">
