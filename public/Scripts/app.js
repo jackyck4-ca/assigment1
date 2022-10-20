@@ -47,16 +47,35 @@ Date : 2022-09-29
                 }
             );
 
+            $("#entryform").click(
+                function()
+                {
+                    err = 0;
+                    $(".req").each(
+                        function()
+                        {
+                            if ($(this).val() == "" )
+                                err = 1;
+                        }
+                    );
+
+                    if (err == 1)
+                        alert("All fields must be filled");
+                    else
+                        document.form1.submit();
+                }
+            );
+
             $("#loginform").click(
                 function()
                 {
                     o = {
-                        "name" : $("#name").val(),
+                        "username" : $("#name").val(),
                         "password" : $("#password").val(),
                     }
 
                     //Check to aprove empty entry
-                    if (o.name != "" && o.password != "" )
+                    if (o.username != "" && o.password != "" )
                     {
                         $.post("/login" , o , 
                             function(o)
@@ -64,7 +83,7 @@ Date : 2022-09-29
                                 console.log(o);
                                 if (o.status == 1 )
                                 {
-                                    alert("Thank you.");
+                                    window.location.href = "/businesscontact";
                                    
                                 }
                                 else if (o.status == 2 )

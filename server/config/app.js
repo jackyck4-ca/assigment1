@@ -22,7 +22,8 @@ mongodb.once("open", () => {
 });
 
 var indexRouter = require('../routes/index');
-var usersRouter = require('../routes/users');
+var businesscontactRouter = require('../routes/businesscontact');
+//var usersRouter = require('../routes/users');
 
 var app = express();
 
@@ -59,6 +60,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use('/', indexRouter);
+app.use('/businesscontact', businesscontactRouter);
 //app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

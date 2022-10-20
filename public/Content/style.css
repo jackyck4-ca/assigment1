@@ -58,3 +58,11 @@ h6 {font-size:1.6rem}
 .about .name {padding:1rem 0;font-size:2rem;}
 .about .description {}
 
+.grid {width:100%;margin:20px 0;}
+.grid th , .grid td {border-width:0 0 1px;border-color:#000000;border-style:solid;text-align:left;}
+.gridhead {display:flex}
+.gridhead .ll {width:50%;text-align:left;}
+.gridhead .rr {width:50%;text-align:right}
+
+.entryform {text-align:left;}
+.entryform .row {padding:0 0 10px}

@@ -30,4 +30,7 @@ router.get('/login', indexController.loginpage);
 /* Post login action. */
 router.post('/login', indexController.loginsubmit);
 
+/* GET logout action. */
+router.get('/logout', indexController.logoutaction);
+
 module.exports = router;

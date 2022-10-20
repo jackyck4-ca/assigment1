@@ -1,0 +1,54 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container about">
+
+  <!-- Section header-->
+  <h1 class="pagetitle">Business Contact</h1>
+
+  <!-- Body text-->
+  <div class="content description">
+
+      <div class="gridhead">
+        <div class="ll">Total Record : <%=(contactlist.length)%></div>
+        <div class="rr"><a href="/businesscontact/add"> + new </a></div>
+      </div>
+      
+
+      <div>
+        <table class="grid">
+        <tr>
+          <th>Name</th>
+          <th>Contact number</th>
+          <th>Email</th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        
+        <% for (let rownum=0;rownum<contactlist.length ;rownum++)  { %>
+        <tr>
+          <td><%=contactlist[rownum].name%></td>
+          <td><%=contactlist[rownum].contact_number%></td>
+          <td><%=contactlist[rownum].email%></td>
+          <td><a href="/businesscontact/edit/<%=contactlist[rownum].id%>">edit</a></td>
+          <td><a href="/businesscontact/delete/<%=contactlist[rownum].id%>">delete</a></td>
+        </tr>
+        <% } %>
+        
+        </table>
+      </div>
+
+  </div>
+</main>
+  
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
+
+
+
+

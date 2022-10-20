@@ -58,62 +58,33 @@ module.exports.loginpage = function(req, res, next) {
 
 /* post login submit. */
 module.exports.loginsubmit = function(req, res, next) {
-  let name = req.body.name;
-  let password = req.body.password;
+  
   res.setHeader('Content-Type', 'application/json');
 
-  //check to avoid empty entry
-  if (name != "" && password != ""  )
-  {
-    console.log(name+" "+password);
-    //res.setHeader('Content-Type', 'application/json');
-    //res.end(JSON.stringify({ status : 1 }));
-    User.findOne(
-      { username: name }, function (err, user) {
-        
-        if (err) 
-        { 
-          console.log("Err")
-          res.end(JSON.stringify({ status : 3 })); 
-        }
-        else
-        {
-          if (!user) 
-          { 
-            console.log("not found") 
-            res.end(JSON.stringify({ status : 2 })); 
+  passport.authenticate("local", function (err, user, info) {
+  
+    if (err) {
+      res.end(JSON.stringify({ status : 3 })); 
+    }
+    else {
+      
+      if (!user) {
+        res.end(JSON.stringify({ status : 2 })); 
+      }
+      else {
+
+        req.login(user, (err) => {
+          // server error?
+          if (err) {
+            res.end(JSON.stringify({ status : 3 }));
           }
-          else
-          {
-            console.log(user);
-            !user.authenticate(password , 
-              function(req)
-              {
-                console.log(req);
-              }  
-            )
-            /*
-            if () 
-            { 
-              console.log("password") 
-              res.end(JSON.stringify({ status : 2 })); 
-            }
-            else
-            {
-              console.log("OK") 
-              res.end(JSON.stringify({ status : 1 })); 
-            }
-            */
-
-          }
-        }       
-
+          res.end(JSON.stringify({ status : 1 })); 
+        });
         
-    });
+      }
+    }
+  })(req, res);
 
-  }
-  else
-    res.end(JSON.stringify({ status : 0 }));
 };
 
 module.exports.logoutaction = (req, res, next) => {

@@ -1,0 +1,46 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Main Content -->
+<main class="container about">
+
+  <!-- Section header-->
+  <h1 class="pagetitle">Business Contact</h1>
+
+  <!-- Body text-->
+  <div class="content description entryform">
+    <form name="form1" method="post">
+      <div class="row">
+        <div class=""><label>Name</label></div>
+        <div class=""><input type="text" id="name" name="name" value="<%=item.name%>" class="field form-control req" /></div>
+      </div>
+
+      <div class="row">
+        <div><label>Contact number</label></div>
+        <div><input type="text" id="contact" name="contact" value="<%=item.contact_number%>" class="field form-control req" /></div>
+      </div>
+
+      <div class="row">
+        <div><label>Email</label></div>
+        <div><input type="text" id="email"  name="email" value="<%=item.email%>"  class="field form-control req" /></div>
+      </div>
+
+      <div class="row">
+        <div><input type="button" class="btn btn-primary" value="Submit" id="entryform" />
+            &nbsp;<a href="/businesscontact/delete/<%=item.id%>">Delete</a>
+            &nbsp;<a href="/businesscontact">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+  
+<%- include ../partials/bottom_nav.ejs %>  
+
+<%- include ../partials/footer.ejs %>
+  
+
+
+
+
