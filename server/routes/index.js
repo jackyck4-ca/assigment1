@@ -24,4 +24,10 @@ router.get('/contact', indexController.contactpage);
 /* Post contact form information */
 router.post('/contact', indexController.submitcontact);
 
+/* GET login page. */
+router.get('/login', indexController.loginpage);
+
+/* Post login action. */
+router.post('/login', indexController.loginsubmit);
+
 module.exports = router;

@@ -46,6 +46,41 @@ Date : 2022-09-29
                         alert("All fields must be filled.");
                 }
             );
+
+            $("#loginform").click(
+                function()
+                {
+                    o = {
+                        "name" : $("#name").val(),
+                        "password" : $("#password").val(),
+                    }
+
+                    //Check to aprove empty entry
+                    if (o.name != "" && o.password != "" )
+                    {
+                        $.post("/login" , o , 
+                            function(o)
+                            {
+                                console.log(o);
+                                if (o.status == 1 )
+                                {
+                                    alert("Thank you.");
+                                   
+                                }
+                                else if (o.status == 2 )
+                                {
+                                    alert("Incorrect password.");
+                                   
+                                }
+                                else
+                                    alert("System error");
+                            }
+                        );
+                    }
+                    else
+                        alert("All fields must be filled.");
+                }
+            );
         }
     );
 
